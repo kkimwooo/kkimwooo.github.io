@@ -1,7 +1,7 @@
 ---
 title: "Github 블로그 만들기"
 date: 2020-08-31 21:26
-categories: test
+categories: blog
 ---
 
 아래 블로그 참고하여 블로그 구성
