@@ -15,46 +15,9 @@ categories: blog
 
 2. sitemap.xml 생성 (웹 크롤러에 내 블로그 정보 전달)
 1) root경로에 sitemap.xml 생성
-2) 아래 내용 복사
-   ---
-    layout: null
-    sitemap:
-      exclude: 'yes'
-    ---
-    <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      {% for post in site.posts %}
-        {% unless post.published == false %}
-        <url>
-          <loc>{{ site.url }}{{ post.url }}</loc>
-          {% if post.sitemap.lastmod %}
-            <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-          {% elsif post.date %}
-            <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-          {% else %}
-            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-          {% endif %}
-          {% if post.sitemap.changefreq %}
-            <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-          {% else %}
-            <changefreq>monthly</changefreq>
-          {% endif %}
-          {% if post.sitemap.priority %}
-            <priority>{{ post.sitemap.priority }}</priority>
-          {% else %}
-            <priority>0.5</priority>
-          {% endif %}
-        </url>
-        {% endunless %}
-      {% endfor %}
-    </urlset>
     
  3. robots.txt 생성(웹 크롤러가 내 사이트의 정보를 크롤링 하려고 할 때 크롤링 할 정책을 결정해주기 위한 파일)
  1) 루트 경로에 robots.txt 생성
- 2) 아래 내용 입력
-  User-agent: *
- Allow: /
- Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }}
  
  4. 구글 서치 콘솔에 sitemap 추가
  1) 구글 서치 콘솔에서 1번에서 등록한 url 정보 선택
