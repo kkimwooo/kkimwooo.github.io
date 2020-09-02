@@ -271,7 +271,7 @@ defaults:
   # blog
   - scope:
       path: ""
-      type: posts
+      type: blog
     values:
       layout: single
       author_profile: true
