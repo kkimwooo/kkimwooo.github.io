@@ -268,10 +268,10 @@ compress_html:
 
 # Defaults
 defaults:
-  # blog
+  # _posts
   - scope:
       path: ""
-      type: blog
+      type: posts
     values:
       layout: single
       author_profile: true
