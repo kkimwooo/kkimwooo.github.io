@@ -26,7 +26,7 @@ categories: blog
     <code>
     부제목    
     
-    ------------
+    ------
     </code>
 
 부제목
