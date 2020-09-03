@@ -13,7 +13,7 @@ categories: blog
 - 큰 제목
 
     <code>
-    큰 제목
+    큰 제목<br/>
     =============
     </code>
 
@@ -98,7 +98,7 @@ categories: blog
     
 [깃허브](http://github.com)
 
-5 이미지 : ![]()
+5 이미지 : '!' '[]' '()' 이용하여 작성
 
     <code>
     ![여름](https://pixabay.com/images/id-5341326/)
@@ -108,13 +108,13 @@ categories: blog
 
 6 테이블 : '-',':','|'(bar)를 이용하여 표 모양 그리고 내용 작성, 그리기 귀찮으니 샘플을 한두개 정도 만들어서 사용하는 것이 좋을 듯. 
     
-    <code>
+    
     | Header        | Header |  Header         |
     | :------------ | :-----------: | -------------------: |
     | First         | Cell          | CellCellCell         |
     | Second        | Cell      | Cell                     |
     | Third         | cell 합치기                           ||
-    </code>
+    
 
 | Header        | Header |  Header         |
 | :------------ | :-----------: | -------------------: |
