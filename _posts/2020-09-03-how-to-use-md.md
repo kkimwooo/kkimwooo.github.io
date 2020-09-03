@@ -14,6 +14,7 @@ categories: blog
 
     <code>
     큰 제목<br/>
+    
     =============
     </code>
 
@@ -24,6 +25,7 @@ categories: blog
 
     <code>
     부제목    
+    
     ------------
     </code>
 
@@ -66,17 +68,11 @@ categories: blog
     
     <code>
     - 막대
-        *막대하위
-            *더하위1
-            *더하위2
     * 별
     + 플러스
     </code>
 
 - 막대
-    *막대하위
-        *더하위1
-        *더하위2
 * 별
 + 플러스
 
